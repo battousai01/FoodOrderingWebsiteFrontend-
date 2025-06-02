@@ -5,7 +5,7 @@ import { backendUrl } from '../../App';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 
-const login = () => {
+const Login = () => {
 
   const [currentState, setCurrentState] = useState('Login');
 
@@ -79,4 +79,4 @@ const login = () => {
   )
 }
 
-export default login
+export default Login
