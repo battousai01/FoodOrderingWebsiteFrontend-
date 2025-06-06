@@ -41,12 +41,12 @@ const Login = () => {
           toast.success(response.data.message)
           localStorage.setItem('token', response.data.token)
         }else{
-          toast.error(error.data.message)
+          toast.error(response.data.message)
         }
       }
     }catch(error){
-        console.log(error);
-        toast.error(error.message )
+        //console.log(error);
+        toast.error(error.response?.data?.message || "Login failed");
     }
   }
 

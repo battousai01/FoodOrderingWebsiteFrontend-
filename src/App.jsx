@@ -10,8 +10,9 @@ import {Routes,Route} from 'react-router-dom'
 import { ToastContainer, toast } from 'react-toastify';
 import Verify from './pages/Verify';
 
-export const backendUrl = 'http://localhost:4000'
+//export const backendUrl = 'http://localhost:4000'
 
+export const backendUrl = 'https://food-ordering-backend-1.onrender.com'
 const App = () => {
   return (
     <div>
@@ -31,3 +32,4 @@ const App = () => {
 };
 
 export default App;
+// Trigger redeploy
